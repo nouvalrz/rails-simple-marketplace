@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Log in</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body class="hold-transition login-page">
+  <div class="login-box">
+    <div class="login-logo">
+      <a href="../../index2.html"><b>Admin</b>LTE</a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Sign in as an admin</p>
+
+        <%= form_with url: admin_login_path do |f| %>
+        <%= f.label :username %>
+        <div class="input-group mb-3">
+          <%= f.text_field :username , class: "form-control", placeholder: "name@example.com"%>
+        </div>
+        <%= f.label :password %>
+        <div class="input-group mb-3">
+          <%= f.password_field :password , class: "form-control"%>
+        </div>
+
+        <div class="social-auth-links text-center mb-3">
+          <%= f.submit "Login", class:"btn btn-block btn-primary"%>
+        </div>
+        <% end %>
+
+        <p class="mb-1">
+          <a href="forgot-password.html">I forgot my password</a>
+        </p>
+      </div>
+      <!-- /.login-card-body -->
+    </div>
+  </div>
+  <!-- /.login-box -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+
+</body>
+
+</html>

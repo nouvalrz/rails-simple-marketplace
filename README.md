@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# rails-simple-marketplace
+Creating marketplace website using Ruby on Rails
+>>>>>>> 7d73858d045566193873c0f1f033fb3c45d2fac5
